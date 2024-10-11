@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333; /* Dark background for navbar */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5rem;
+            position: fixed;
+            top: 0; /* Keep the navbar visible at the top */
+            width: 100%;
+            z-index: 999; /* Ensure the navbar is on top */
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .restaurant-name {
+            background-color: #ff6347; /* Light tomato color for the restaurant name */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 2rem; /* Increase font size for better visibility */
+        }
+
+        #menu {
+            padding: 50px;
+            background-color: #d9dee3;
+            margin-top: 80px; /* Add space below the fixed navbar */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-category {
+            margin-bottom: 30px; /* Space between categories */
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333; /* Dark background for footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Zaika Zest</h1>
+        <hr>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="reserve.html">Reservation</a>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2><u>Our Menu</u></h2>
+    
+        <div class="menu-category">
+            <h3><u>Appetizers</u></h3>
+            <ul>
+                <li><strong>Paneer Tikka</strong> – ₹250</li>
+                <li><strong>Chicken Malai Kebab</strong> – ₹300</li>
+                <li><strong>Hummus with Pita Bread</strong> – ₹180</li>
+                <li><strong>Vegetable Spring Rolls</strong> – ₹200</li>
+                <li><strong>Onion Bhaji</strong> – ₹150</li>
+            </ul>
+        </div>
+    
+        <div class="menu-category">
+            <h3><u>Main Course</u></h3>
+            <ul>
+                <li><strong>Butter Chicken</strong> – ₹350</li>
+                <li><strong>Hyderabadi Biryani</strong> – ₹400</li>
+                <li><strong>Pasta Alfredo</strong> – ₹300</li>
+                <li><strong>Paneer Butter Masala</strong> – ₹320</li>
+                <li><strong>Lamb Rogan Josh</strong> – ₹450</li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <h3><u>Sweets</u></h3>
+            <ul>
+                <li><strong>Gulab Jamun</strong> – ₹100</li>
+                <li><strong>Ras Malai</strong> – ₹120</li>
+                <li><strong>Jalebi</strong> – ₹80</li>
+                <li><strong>Kheer</strong> – ₹90</li>
+                <li><strong>Barfi</strong> – ₹150</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Zaika Zest. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

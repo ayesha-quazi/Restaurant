@@ -1,0 +1,175 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    margin: 50px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 150%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 150%;
+}
+
+.carousel-image {
+    width: 150%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Menu Section */
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+}
+
+/* Center Carousel Buttons */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1; /* Ensures buttons appear above images */
+}
+
+
+/* Contact Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea, #contact-form button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* About Section */
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+/* Reviews Section */
+#reviews {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.review .profile:hover img {
+    transform: scale(1.2);
+}
+
+.review-content {
+    flex-grow: 1;
+}
+
+.rating {
+    color: gold;
+    font-size: 1.2rem;
+}
